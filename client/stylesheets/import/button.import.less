@@ -1,13 +1,39 @@
 
 .btn-default:hover,
 .btn-default:active {
+	background-color: #d34436;
+	color: #fff;
+	text-decoration: none;
+	transition: background-color 1s;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
 	background-color: darken(@primary-color, 5%);
 	color: #fff;
 	text-decoration: none;
+	transition: background-color 1s;
 }
 
+
 .btn {
+	text-transform: uppercase;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	font-size: 75%;
+	padding: 15px 30px;
 	transition: background-color 0.5s, color 0.5s;
-	margin-right: 0.5%;
+	border-width: 2px;
+	margin-right: 1%;
+	font-weight: 700;
+}
+
+
+.btn-form {
+	padding: 15px 40.5%;
+	background-color: darken(@cta-color, 3%);
+	color: #fff;
+	text-decoration: none;
+	transition: background-color 1s;
 }
 

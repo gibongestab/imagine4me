@@ -1,6 +1,6 @@
 
 footer {
-	background-color: #333;
+	background-color: @background-blue;
 	padding: 50px;
 	font-size: 80%;
 }
@@ -13,6 +13,7 @@ footer {
 .social-links {
 	list-style: none;
 	float: right;
+	margin-right: 30px;
 }
 
 .footer-nav li,
@@ -32,17 +33,17 @@ footer {
 .social-links li a:visited {
 	text-decoration: none;
 	border: 0;
-	color: #888;
+	color: #d0d0d0;
 	transition: color 0.2s;
 }
 
 .footer-nav li a:hover,
 .footer-nav li a:active {
-	color: #ddd;
+	color: @primary-color;
 }
 
 footer p {
-	color: #888;
+	color: #d0d0d0;
 	text-align: center;
 	margin-top: 20px;
 }
@@ -75,6 +76,10 @@ footer:last-child {
 	color: #dd4b39;
 }
 
-.fa-instagram:hover {
-	color: #125688;
+.fa-behance-square:hover {
+	color: #1769ff;
+}
+
+.fa-linkedin-square:hover {
+	color: #0077b5;
 }

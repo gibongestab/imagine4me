@@ -1,55 +1,169 @@
 
 
-/* Large Devices, Wide Screens */
+/* --------------------------Large Devices, Wide Screens -------------------------------------*/
 
-@media only screen and (max-width : 1200px) {
+@media only screen and (max-width : 1400px) {
+
+	/*---- NAVBAR ---- */
+
+	.navbar-left {
+    margin-left: 2%;
+   }
+
+  .navbar-right {
+    margin-right: 0%;
+  }
+
+  .navbar-list > li > a {
+	font-size: 70%;
+  }
+
+  /*---- HERO ---- */
+
 	.hero-text-box {
 		width: 100%;
 		padding: 0 3%;
 	}
 
-	.steps-box:last-child {
-		margin-top: 100px;
+	h1 {
+		font-size: 200%;
 	}
+
+	.btn-primary,
+	.btn-default {
+	font-size: 70%;
+	padding: 15px 25px;
+	}
+
+	/*---- ABOUT ---- */
+
+	.about-perfil {
+	margin-left: 7%;
+	margin-top: 13%;
+}
+
+
+/*----- ENCOMENDAS ----*/
+
+.container-encomendas {
+    width: 970px;
+}
+
+.p-encomendas-margin {
+	margin-top: 0px;
+}
+
+/*----- FORM ----*/
+
+.form-horizontal {
+	padding-left: 100px;
+}
+
+.section-form {
+	&:before {
+        margin-left: 44%;
+    }
+}
 
 }
 
 
-/* Medium Devices, Desktops */
+/* ------------------------------ Medium Devices, Desktops ----------------------------*/
 
 @media only screen and (max-width: 992px) {
 
-.container {
+	.container {
 	width: 100%;
 }
 
 .my-body {font-size: 18px;}
 
-section {padding: 60px, 0;}
+section {padding: 50px, 0px, 60px, 0px;}
+
+	/*- NAVBAR -*/
+
+.navbar-left {
+    margin-left: 0%;
+   }
+
+  .navbar-right {
+    margin-right: -20px;;
+  }
+
+.navbar-list > li > a {
+	font-size: 70%;
+	letter-spacing: 0.5px;
+	margin-right: 2px;
+  }
+
+.logo {
+	width: 180px;
+}
+
+/*-- ABOUT --*/
+
+.about-perfil {
+	margin-left: 4%;
+	margin-top: 15%;
+}
 
 .long-copy {
-	width: 80%;
-	margin-left: 10%
+    line-height: 170%;;
+    word-spacing: 3px;
+    letter-spacing: 0.5px;
+    margin-left: 8%
 }
+
+/*-- CONHECIMENTOS --*/
+
+	.skills {
+		width: 80%;
+	}
 
 .section-works {
 	padding-top: 60px;
 	padding-bottom: 100px;
 }
 
+/* --- FORM ---*/
 
 .form-horizontal {
-	width: 80%;
-	margin: auto;
+	padding-left: 0px;
+}
+
+.form-group {
+    width: 100%;
+  }
+
+ .btn-form {
+ padding: 15px 42.5%;
 }
 
 }
 
 
- /* Small Devices, Tablets */
+ /*--------------------------------------- Small Devices, Tablets ---------------------------*/
 
 @media only screen and (max-width: 768px) {
 
+
+/* --- HERO --- */
+
+.logo {
+	width: 180px;
+	vertical-align: middle;
+	margin-top: 2%;
+}
+
+h1 {
+		line-height: 160%;
+	}
+
+ .btn-primary,
+ .btn-default {
+	font-size: 70%;
+	padding: 15px 25px;
+	}
 
 /* --- Navbar for mobile --- */
 
@@ -60,9 +174,6 @@ section {padding: 60px, 0;}
  padding-bottom: 8px;
 }
 
-.navbar-list {
- margin-top: 6.5%;
-}
 
 .navbar-list > li > a:link,
 .navbar-list > li > a:visited, {
@@ -80,7 +191,7 @@ section {padding: 60px, 0;}
 /* --- Sticky-Navbar for mobile --- */
 
 .sticky {
-	background-color: rgba(255, 255, 255, 0.98);
+	background-color: rgba(255, 255, 255, 0.97);
 }
 
 .sticky .navbar-toggle {
@@ -91,49 +202,127 @@ section {padding: 60px, 0;}
 	background-color: @primary-color;
 }
 
+/*-- ABOUT --*/
 
-/* --- Portfolio --- */
+.about-perfil {
+	margin-top: 0%;
+	margin-bottom: 10%;
+}
+
+.col-foto {
+	text-align: center;
+}
+
+.long-copy {
+    line-height: 170%;;
+    word-spacing: 3px;
+    letter-spacing: 0.5px;
+    margin-left: 8%
+}
+
+.icons-center {
+	margin-bottom: 5%;
+}
+
+/*-- CONHECIMENTOS --*/
+
+.row-space-conhecimentos {
+	margin-top: 40px;
+}
+
+.section-conhecimentos {
+	padding: 35px 0px 80px 0px;
+	height: 50%;
+}
+	.skills {
+		width: 55%;
+	}
+
+ .row-space-charts {
+	img {
+		width: 85%;
+	}
+
+	.col-skills {
+		margin-top: 40px;
+	}
+}
+
+/* --- PORTFOLIO --- */
 
 .showcase > li {
 	display: inline-block;
 	float: none;
-	width: 47%;
-	border: 5px double #E5E5E5
+	width: 100%;
 }
 
 .showcase {
 	text-align: center;
 }
 
-.portfolio-photo h5 {
-	word-spacing: 3px;
-	font-size: 110%;
-	padding: 18%;
-	width: 75%;
-	top: 45%;
+	.esperancas,
+	.boanoite,
+	.estrutura,
+	.farewell,
+	.sonhos,
+	.madrugadas {
+	min-width: 100%;
+	}
+
+/* --- FORM ---*/
+
+.form-horizontal {
+	padding-left: 15px;
 }
 
-/* --- How It Works --- */
+ .btn-form {
+ padding: 15px 45%;
+}
 
-.steps-box:first-child {
-    text-align: center;
+.section-form {
+	&:before {
+        margin-left: 41%;
+    }
+}
+
+/* --- FOOTER ---*/
+
+.social-links,
+.footer-nav {
+	text-align: center;
+	float: none;
 }
 
 }
 
-/* Extra Small Devices, Phones */ 
+
+
+/* ------------------------------------ Extra Small Devices, Phones ----------------------------- */ 
 
 @media only screen and (max-width: 480px) {
 
-h1 {
-	font-size: 200%;
-	word-spacing: 2px;
+	/* --- HERO --- */
+
+.logo {
+	width: 180px;
+	vertical-align: middle;
+	margin-top: 2%;
 }
 
-.form-horizontal {
-	width: 90%;
-	margin: auto;
-}
+h1 {
+		font-size: 160%;
+		line-height: 150%;
+		word-spacing: 2px;
+		margin-bottom: 7%
+	}
+
+.btn-primary,
+.btn-default {
+	font-size: 70%;
+	padding: 15px 23px;
+	margin-bottom: 3%;
+	}
+
 
 .navbar-toggle {
 	margin-top: 10%;
@@ -143,6 +332,43 @@ h1 {
 	margin-top: 4%;
 }
 
+/* --- ABOUT --- */
+
+.about-perfil {
+	width: 90%;
+}
+
+/*-- CONHECIMENTOS --*/
+
+.row-space-h3 {
+  margin-bottom: 5px;
+  }
+
+.row-space-conhecimentos {
+	margin-top: 0px;
+}
+
+.row-space-charts {
+    padding-top: 15px;
+}
+
+
+/*---- FORM --- */
+
+
+.section-form {
+	&:before {
+        margin-left: 35%;
+    }
+}
+
+.form-group {
+    width: 110%;
+  }
+
+.btn-form {
+ padding: 15px 41%;
+}
 
 }
 

@@ -1,17 +1,14 @@
- Template.layout.onRendered(function() {
-
- /* Animations on scroll */
-
-    $('.js-wp-1').waypoint(function(direction) {
-        $('.js-wp-1').addClass('animated fadeIn');
+Template.layout.onRendered(function() {
+  let giWow = function(selector, effect, offset) {
+    $(selector).waypoint(function() {
+      $(this).addClass('animated ' + effect);
     }, {
-        offset: '50%'
+      offset: offset
     });
+  };
 
-    $('.js-wp-2').waypoint(function(direction) {
-        $('.js-wp-2').addClass('animated fadeInUp');
-    }, {
-        offset: '50%'
-    });
+  /* Animations on scroll */
 
+  giWow('.js-wp-1', 'fadeIn', '50%');
+  giWow('.js-wp-2', 'fadeInUp', '50%');
 });

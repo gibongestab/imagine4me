@@ -1,14 +1,47 @@
+/* VIDEO 
+
+.header-container {
+	width: 100%;
+	height: 1000px;
+	border-left: none;
+	border-right: none;
+	position: relative;
+}
+
+.video-container {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+video {
+	position: absolute;
+	opacity: 0.9;
+	width: 100%;
+}
+
+nav {
+	z-index: 9999;
+}
+*/
+
+
 header {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/header.jpg);
+	background-image: url(images/hero/hero-image.png);
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
+	width: 100%;
 	height: 100vh;
 }
 
 .hero-text-box {
 	position: absolute;
 	width: 1140px;
-	top: 50%;
+	top: 52%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -21,49 +54,54 @@ header {
 	padding-right: 5%;
 }
 
-.navbar {
-	height: 120px;
-	line-height: 120px;
-}
-
 .logo {
-	height: 100px;
+	height: 66px;
 	width: auto;
 	vertical-align: middle
 }
 
 .logo-black {
 	display: none !important;
-	height: 50px;
-	width: auto;
-	margin-left: 15px;
+	width: 150px;
+	margin-left: 1%;
 }
  
 .nav {
-	margin-top: 37px;
+	padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar-left{
+	margin-left: 19%;
+}
+
+.navbar-right {
+	margin-right: 12%;
 }
 
 .navbar-list > li > a {
 	text-transform: uppercase;
-	font-size: 90%;
-	margin-right: 5px;
+	font-size: 75%;
+	letter-spacing: 1px;
+	margin-right: 3px;
 	border-bottom: 1px solid transparent;
-	border-top: 1px solid transparent;
-	transition: border 0.2s;
+	color: #fff;
+	transition: border 0.2s, color 0.2s;
 }
 
 
 .navbar-list > li > a:hover,
 .navbar-list > li > a:active, {
 		border-bottom: 1px solid @primary-color;
-		border-top: 1px solid @primary-color;
+		color: @primary-color;
 }
 
 
 /*----- MOBILE NAVBAR ------- */
 
 .navbar-toggle {
-	margin-top: 6.5%;
+	margin-top: 4%;
+	border-width: 2px;
 }
 
 
@@ -81,6 +119,10 @@ header {
 	z-index: 9999;
 }
 
+.sticky .nav {
+	padding-top: 3px;
+}
+
 .sticky .navbar-list {
 		margin-top: 5px;
 }
@@ -90,6 +132,11 @@ header {
 	color: #555;
 }
 
+.sticky .navbar-list > li > a:active,
+.sticky .navbar-list > li > a:hover, {
+	color: @primary-color;
+	border-bottom: 1px solid transparent;
+}
 
 
 .sticky .logo-black {display: block !important;}
