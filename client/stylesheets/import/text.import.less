@@ -1,21 +1,16 @@
 
 /*------- HEADINGS ---------- */
 
-h1,
-h2,
-h3 { 
-    font-weight: 300;
-    text-transform: uppercase;
-}
-
 h1 {
     margin-top: 0;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
     color: #fff;
-    font-size: 240%;
+    font-size: 450%;
     word-spacing: 4px;
     letter-spacing: 2px;
     line-height: 130%;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 h2 {
@@ -24,25 +19,46 @@ h2 {
     text-align: center;
     margin-bottom: 30px;
     letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
 
-    &:after {
-        display: block;
-        height: 2px;
-        background-color: @primary-color;
-        content: " ";
-        width: 100px;
-        margin: 0 auto;
-        margin-top: 20px;
+    span {
+        color: @cta-color;
     }
 }
 
 h3 {
-    font-size: 110%;
+    font-size: 90%;
     margin-bottom: 15px;
     letter-spacing: 1px;
+    font-weight: 400;
 }
 
-/*------- PARAGRAPHS ---------- */
+/*------- HEADER ---------- */
+
+.hero-h3 {
+    color: #fff;
+    margin-bottom: 5%;
+    font-size: 110%;
+}
+
+h1 span {
+    color: @cta-color;
+    font-size: 125%;
+}
+
+
+.light-text {
+    h2,
+    p,
+    h3 {
+        color: #fefefe;
+    span {
+        color: @cta-color;
+    }
+    }
+
+}
 
 
 .long-copy {
@@ -52,9 +68,13 @@ h3 {
 }
 
 p {
-    font-size: 90%;
-    line-height: 145%;
+    font-size: 80%;
+    line-height: 25px;
+    letter-spacing: 1.2px;
+    word-spacing: 2.5px;
+    font-weight: 400;
 }
+
 
 .p-list {
     font-size: 110%;
