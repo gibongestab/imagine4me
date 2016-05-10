@@ -1,8 +1,8 @@
 
 .btn-default:hover,
 .btn-default:active {
-	border-color: #cd3d2e;
-	background-color: transparent;
+	border-color: #ec685b;
+	background-color: #ec685b;
 	text-decoration: none;
 	transition: background-color 0.7s, border 0.7s;
 }
@@ -28,10 +28,14 @@
 
 
 .btn-form {
-	padding: 15px 40.5%;
-	background-color: darken(@cta-color, 3%);
+	padding: 15px 28%;
+	background-color: @cta-color;
 	color: #fff;
 	text-decoration: none;
-	transition: background-color 1s;
 }
 
+.btn-form:hover,
+.btn-form:active {
+	background-color: #ec685b;
+	transition: background-color 1s;
+}

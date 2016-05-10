@@ -19,15 +19,15 @@ Template.layout.onRendered(function() {
 Template.layout.events({
     'click .js-scroll-full': function() {
         $('.my-body').animate({
-            scrollTop: $('.js-section-encomendas').offset().top}, 1000)
+            scrollTop: $('.js-section-services').offset().top}, 1000)
     },
 
     'click .js-scroll-ghost': function() {
         $('.my-body').animate({
-            scrollTop: $('.js-section-portfolio').offset().top}, 1000)
+            scrollTop: $('.js-section-about').offset().top}, 1000)
     },
 
-    'click .js-scroll-encomendas': function() {
+    'click .js-scroll-cta': function() {
         $('.my-body').animate({
             scrollTop: $('.js-section-form').offset().top}, 1000)
     },

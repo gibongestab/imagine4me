@@ -1,61 +1,63 @@
 <template name="form">
-    <section class="section-form form js-section-form" id="form">
-        <div class="container">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-form">
-               <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 col-form-right">
-                <div class="row row-contatos-icons">
-                  <i class="fa fa-phone contatos-icons"></i>
-                </div>
-                   <div class="row row-contatos-icons">
-                  <i class="fa fa-envelope contatos-icons"></i>
-                </div>
-                   <div class="row row-contatos-icons">
-                  <i class="fa fa-map-marker contatos-icons"></i>
-                </div>
-               </div>
-               <div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 col-form-right">
-                 <div class="row row-contatos">
-                  <p>(11) 97415-6205</p>
-                 </div>
-                 <div class="row row-contatos">
-                  <p>giselleblucas@gmail.com</p>
-                 </div>
-                 <div class="row row-contatos">
-                  <p>Rua Clarence, 295</p>
-                 </div>
-               </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-form">
-                <form class="form-horizontal">
-                    <fieldset>
-                        <!-- Form Name -->
-                        <!-- Text input-->
-                        <div class="form-group">
-                            <div class="col-lg-6 col-md-6">
-                                <input id="form-name" name="form-name" type="text" placeholder="Nome" class="form-control input-md" required="">
-                            </div>
-                        </div>
-                        <!-- Text input-->
-                        <div class="form-group">
-                            <div class="col-lg-6 col-md-6">
-                                <input id="form-email" name="form-email" type="text" placeholder="Email" class="form-control input-md" required="">
-                            </div>
-                        </div>
-                        <!-- Textarea -->
-                        <div class="form-group">
-                            <div class="col-lg-6 col-md-6 textarea-form">
-                                <textarea class="form-control" id="form-text" name="form-text" placeholder="Do que você precisa?"></textarea>
-                            </div>
-                        </div>
-                        <!-- Button -->
-                        <div class="form-group">
-                            <div class="col-lg-6 col-md-6">
-                                <button id="form-send" name="form-send" class="btn btn-form">Enviar</button>
-                            </div>
-                        </div>
-                    </fieldset>
-                </form>
-            </div>
+  <section class="section-form js-section-form" id="form">
+    <div class="container">
+      <div class="row light-text">
+        <h2><span>Contact</span> us</h2>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 form-1 light-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-6">
+         <div class="row row-contatos">
+          <p>(11) 97415-6205</p>
         </div>
-    </section>
+        <div class="row row-contatos">
+          <p>imagine4me@gmail.com</p>
+        </div>
+        <div class="row row-contatos">
+          <p>Rua Clarence, 295 - São Paulo/SP - Brazil</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+        <div class="row row-contatos-icons">
+          <i class="fa fa-phone contatos-icons"></i>
+        </div>
+        <div class="row row-contatos-icons">
+          <i class="fa fa-envelope contatos-icons"></i>
+        </div>
+        <div class="row row-contatos-icons">
+          <i class="fa fa-map-marker contatos-icons"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-form wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+      <form class="form-horizontal">
+        <fieldset>
+          <!-- Form Name -->
+          <!-- Text input-->
+          <div class="form-group">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <input id="form-name" name="form-name" type="text" placeholder="Name" class="form-control input-md" required="">
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <input id="form-email" name="form-email" type="text" placeholder="Email" class="form-control input-md" required="">
+            </div>
+          </div>
+          <!-- Text input-->
+          
+          <!-- Textarea -->
+          <div class="form-group">
+            <div class="col-lg-6 col-md-6 textarea-form">
+              <textarea class="form-control" id="form-text" name="form-text" placeholder="Your message"></textarea>
+            </div>
+          </div>
+          <!-- Button -->
+          <div class="form-group">
+            <div class="col-lg-4 col-md-4">
+              <button id="form-send" name="form-send" class="btn btn-form">Submit</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div> 
+  </div>
+</section>
 </template>
