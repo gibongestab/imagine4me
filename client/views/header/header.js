@@ -15,6 +15,14 @@ Template.layout.onRendered(function() {
 
 });
 
+Template.layout.helpers({
+    notPt() {
+        return TAPi18n.getLanguage() !== 'pt'
+    },
+    notEn() {
+        return TAPi18n.getLanguage() !== 'en'
+    }
+})
 
 Template.layout.events({
     'click .js-scroll-full': function() {
@@ -31,8 +39,14 @@ Template.layout.events({
         $('.my-body').animate({
             scrollTop: $('.js-section-form').offset().top}, 1000)
     },
-
-
+    'click .set-pt'(event) {
+        event.preventDefault();
+        TAPi18n.setLanguage('pt');
+    },
+    'click .set-en'(event) {
+        event.preventDefault();
+        TAPi18n.setLanguage('en');
+    },
     'click a[href*=#]:not([href=#])':function(e) {
         var el = e.target;
         //this -> contexto de dados

@@ -16,20 +16,24 @@
 			<div class="container-fluid navbar-container collapse navbar-collapse" id="my-navbar">
 				<div>
 					<ul class="nav navbar-nav navbar-right navbar-list">
-						<li><a href="#about">About</a></li>
-						<li><a href="#process">Process</a></li>
-						<li><a href="#work">Work</a></li>
-						<li><a href="#services">Services</a></li>
-						<li><a href="#form">Contact</a></li>
+						<li><a href="#about">{{_"menu_about"}}</a></li>
+						<li><a href="#process">{{_"menu_process"}}</a></li>
+						<li><a href="#work">{{_"menu_work"}}</a></li>
+						<li><a href="#services">{{_"menu_services"}}</a></li>
+						<li><a href="#form">{{_"menu_contact"}}</a></li>
+						<!-- esse eh um ainterface grafica pre feita,eh melhor vc fazer a sua -->
+
+						<li><a href="#" class="set-en {{#if notEn}}faded{{/if}}"><span class="flag-icon flag-icon-us"></span></a></li>
+						<li><a href="#" class="set-pt {{#if notPt}}faded{{/if}}"><span class="flag-icon flag-icon-br"></span></a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 		<div class="hero-text-box">
 			<h1>We imagine <span>4</span> you</h1>
-			<h3 class="hero-h3">Here your website is made with code, great design and lots of love.</h3>
-			<button class="btn btn-primary js-scroll-ghost">Learn more about us</button>
-			<button class="btn btn-default js-scroll-full">Check out our services</button>
+			<h3 class="hero-h3">{{_"hero_message"}}</h3>
+			<button class="btn btn-primary js-scroll-ghost">{{_"button_ghost"}}</button>
+			<button class="btn btn-default js-scroll-full">{{_"button_cta"}}</button>
 		</div>
 	</header>
 </template>
