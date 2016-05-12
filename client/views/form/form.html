@@ -29,16 +29,16 @@
       </div>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-form wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
-      <form class="form-horizontal">
+      <form class="form-horizontal" id="contact-form">
         <fieldset>
           <!-- Form Name -->
           <!-- Text input-->
           <div class="form-group">
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-              <input id="form-name" name="form-name" type="text" placeholder="{{_"contact_name"}}" class="form-control input-md" required="">
+              <input id="form-name" name="name" type="text" placeholder="{{_"contact_name"}}" class="form-control input-md" required="">
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-              <input id="form-email" name="form-email" type="text" placeholder="Email" class="form-control input-md" required="">
+              <input id="form-email" name="email" type="email" placeholder="Email" class="form-control input-md" required="">
             </div>
           </div>
           <!-- Text input-->
@@ -46,13 +46,13 @@
           <!-- Textarea -->
           <div class="form-group">
             <div class="col-lg-6 col-md-6 textarea-form">
-              <textarea class="form-control" id="form-text" name="form-text" placeholder="{{_"contact_message"}}"></textarea>
+              <textarea class="form-control" id="form-text" type="text" name="message" placeholder="{{_"contact_message"}}"></textarea>
             </div>
           </div>
           <!-- Button -->
           <div class="form-group">
             <div class="col-lg-4 col-md-4">
-              <button id="form-send" name="form-send" class="btn btn-form">{{_"contact_submit"}}</button>
+              <button id="form-send" name="submit" class="btn btn-form">{{_"contact_submit"}}</button>
             </div>
           </div>
         </fieldset>

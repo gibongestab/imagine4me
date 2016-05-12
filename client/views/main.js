@@ -1,18 +1,38 @@
 /*
 
-Template.layout.onRendered(function() {
-  let giWow = function(selector, effect, offset) {
-    $(selector).waypoint(function() {
-      $(this).addClass('animated ' + effect);
-    }, {
-      offset: offset
-    });
-  };
 
-   Animations on scroll 
+import { Meteor } from 'meteor/meteor';
 
-  giWow('.js-wp-1', 'fadeIn', '50%');
-  giWow('.js-wp-2', 'fadeInUp', '50%');
+Subscribers = new Mongo.Collection('subscribers');
+
+Meteor.startup(() => {
+  // code to run on server at startup
 });
+
+Meteor.methods({
+  sendEmail(emailObj) {
+    console.log('[sendEmail]', emailObj);
+    this.unblock();
+    
+    Email.send({
+      from: 'Imagine4me Contact',
+      to: 'contact@Imagine4me',
+      subject: 'New customer contact',
+        text: `
+  <ul>
+    <li> Name: ${emailObj.name} </li>
+    <li> Email: ${emailObj.email} </li>
+    <li> Message: ${emailObj.message} </li>
+  </ul>
+`
+    })
+  },
+  subscribe(email) {
+    return Subscribers.insert({
+      email: email,
+      date: new Date()
+    })
+  }
+})
 
 */
