@@ -51,7 +51,10 @@
 	"contact_submit": "Submit",
 	"contact_name": "Name",
 	"contact_message": "What do you need?",
-	"footer": "by Imagine4me. All rights reserved."
+	"footer": "by Imagine4me. All rights reserved.",
+	"error":"Error",
+	"success": "Sent",
+	"loading": "Loading..."	
 
 }
 

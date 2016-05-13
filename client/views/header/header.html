@@ -1,17 +1,17 @@
 <template name="header">
 	<header id="home">
 		<nav class="navbar navbar-default">
-		<div>
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-navbar" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    		<div class="navbar-header navbar-brand navbar-left">
-					<a href="#home"><img src="/images/top-bar/logo.png" alt="logo" class="logo"></a>
-					<a href="#home"><img src="/images/top-bar/logo.png" alt="logo" class="logo-sticky"></a>
+			<div>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-navbar" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-header navbar-brand navbar-left">
+				<a href="#home"><img src="/images/top-bar/logo.png" alt="logo" class="logo"></a>
+				<a href="#home"><img src="/images/top-bar/logo.png" alt="logo" class="logo-sticky"></a>
 			</div>
 			<div class="container-fluid navbar-container collapse navbar-collapse" id="my-navbar">
 				<div>
@@ -30,10 +30,34 @@
 			</div>
 		</nav>
 		<div class="hero-text-box">
-			<h1>We imagine <span>4</span> you</h1>
-			<h3 class="hero-h3">{{_"hero_message"}}</h3>
-			<button class="btn btn-primary js-scroll-ghost">{{_"button_ghost"}}</button>
-			<button class="btn btn-default js-scroll-full">{{_"button_cta"}}</button>
+			<!-- <h1>We imagine <span>4</span> you</h1> -->
+			<div class="container-fluid">
+				<div class="row" style="margin-left: 90px">
+				<div class="col-lg-2">
+						<h1>We</h1>
+					</div> 
+					<div class="col-lg-5">
+						<div class='content'>
+							<div class='visible'>
+								<ul>
+									<li>Code</li>
+									<li>Imagine</li>
+									<li>Create</li>
+									<li>Design</li>
+								</ul>
+							</div>
+						</div>
+					</div> 
+					<div class="col-lg-5" style="margin-left: -30px;">
+						<h1><span>4</span> you</h1>
+					</div> 
+				</div>
+				<div class="row">   
+					<h3 class="hero-h3">{{_"hero_message"}}</h3>
+				</div>
+				<button class="btn btn-primary js-scroll-ghost">{{_"button_ghost"}}</button>
+				<button class="btn btn-default js-scroll-full">{{_"button_cta"}}</button>
+			</div>
 		</div>
 	</header>
 </template>

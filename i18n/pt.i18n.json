@@ -49,9 +49,14 @@
 	"contact_title_two": "em contato",
 	"contact_address": "Rua Clarence, 295 - São Paulo/SP",
 	"contact_submit": "Enviar",
+
 	"contact_name": "Nome",
 	"contact_message": "Do que você precisa?",
-	"footer": "por Imagine4me. Todos os direitos reservados."
+	"footer": "por Imagine4me. Todos os direitos reservados.",
+	"error":"Erro",
+	"success": "Enviado",
+	"loading": "Carregando..."
+
 }
 
 
