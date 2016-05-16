@@ -13,7 +13,9 @@ Template.layout.onRendered(function() {
         offset: '90px;'
     });
 
+
 });
+
 
 Template.layout.helpers({
     notPt() {
