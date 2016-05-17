@@ -23,6 +23,7 @@ ddp-client@1.2.1
 ddp-common@1.2.2
 ddp-server@1.2.2
 deps@1.0.9
+dferber:prerender@2.2.0_2
 diff-sequence@1.0.1
 ecmascript@0.1.6
 ecmascript-runtime@0.2.6
@@ -74,14 +75,12 @@ routepolicy@1.0.6
 session@1.1.1
 spacebars@1.0.7
 spacebars-compiler@1.0.7
-spiderable@1.0.9
 standard-minifiers@1.0.2
 tap:i18n@1.8.0
 tap:i18n-ui@0.7.0
 templating@1.1.5
 templating-tools@1.0.0
 timmyg:wow@1.0.1
-tomwasd:flow-router-seo@0.0.3
 tracker@1.0.9
 ui@1.0.8
 underscore@1.0.4
