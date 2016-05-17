@@ -17,7 +17,7 @@ Template.layout.onRendered(function() {
 });
 
 
-Template.layout.helpers({
+Template.header.helpers({
     notPt() {
         return TAPi18n.getLanguage() !== 'pt'
     },
