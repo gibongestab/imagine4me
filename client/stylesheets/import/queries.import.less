@@ -29,6 +29,24 @@
 }
 
 
+/* --------------------------Large Devices, Wide Screens -------------------------------------*/
+
+
+    @media only screen and (max-width: 1200px) {
+
+    .process-center img {
+        height: auto;
+    }
+
+    .about-center {
+        h3 {
+            &:before {
+                display: none;
+            }
+        }
+    }
+}
+
 /* ------------------------------ Medium Devices, Desktops ----------------------------*/
 
 @media only screen and (max-width: 992px) {
@@ -53,20 +71,14 @@ section {padding: 50px, 0px, 60px, 0px;}
 /*-- ABOUT --*/
 
 .about-center {
-	img {
-	 height: 100px;
+img {
+height: 100px;
  }
  &:before {
         height: 40px;
         width: 4px;
         margin: -10px 10px 0px 10px;
 	}
-}
-
-/*-- PROCESS --*/
-
-.process-center img {
-    height: 200px;
 }
 
 /*-- SERVICES --*/
@@ -107,12 +119,18 @@ section {padding: 50px, 0px, 60px, 0px;}
 
 @media only screen and (max-width: 769px) {
 
+	header {
+	height: 80vh;
+}
+
+
 .container {width: 95%;}
 
 /* --- HERO --- */
 
 .hero-text-box {
 	width: 90%;
+	top: 40%;
 }
 
 
@@ -259,7 +277,7 @@ p {
 
 /* ------------------------------------ Extra Small Devices, Phones ----------------------------- */ 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 551px) {
 
 /* --- HERO --- */
 
@@ -307,9 +325,9 @@ h1 {
 		padding-top: 40px;
 	}
 
-	img {
-		height: 80px;
-	}
+	//img {
+	//	height: 80px;
+	//}
 }
 
 
@@ -334,9 +352,9 @@ h1 {
 /* --- SERVICES --- */
 
 
- .services-retangle img {
-    width: 100%;
-}
+ //.services-retangle img {
+ //   width: 100%;
+//}
 
 /* --- CTA --- */
 
