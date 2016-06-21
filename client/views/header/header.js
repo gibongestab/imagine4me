@@ -18,11 +18,11 @@ Template.layout.onRendered(function() {
 
 
 Template.header.helpers({
-    notPt() {
-        return TAPi18n.getLanguage() !== 'pt'
-    },
     notEn() {
         return TAPi18n.getLanguage() !== 'en'
+    },
+    notPt() {
+        return TAPi18n.getLanguage() !== 'pt'
     }
 })
 
